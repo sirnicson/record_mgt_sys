@@ -2,7 +2,7 @@ import json
 import os
 
 class RecordManager:
-    def __init__(self, filename="05-records.json"):
+    def __init__(self, filename="e_records.json"):
         self.filename = filename
         self.records = {"clients": [], "flights": [], "airlines": []}
         self.load_records()
