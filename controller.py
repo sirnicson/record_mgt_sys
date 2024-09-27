@@ -1,4 +1,4 @@
-from model import RecordManager
+from a_model import RecordManager
 
 class Controller:
     def __init__(self):
@@ -32,5 +32,3 @@ class Controller:
             self.record_manager.delete_record(record_type, record_id)
         except ValueError as e:
             print(f"Error deleting record: {e}")
-
-
