@@ -1,3 +1,5 @@
 # Libraries utilized in this project
 
+- jsonlines: For reading and writing JSON Lines format files
 - pytest: For unit testing
+
