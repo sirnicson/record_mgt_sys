@@ -4,11 +4,11 @@
 record_mgt_system/
 |
 |--- README.md		# Project documentation
-|--- a_model.py		# CRUD methods that communicate with JSON
-|--- b_controller.py	# controller logic
-|--- c_view.py		# GUI logic (Tkinter)
-|--- d_main.py		# Entry point to run the application
-|--- e_records.json	# Data storage (JSON file)
+|--- model.py		# CRUD methods that communicate with JSON
+|--- controller.py	# controller logic
+|--- view.py		# GUI logic (Tkinter)
+|--- main.py		# Entry point to run the application
+|--- records.json	# Data storage (JSON file)
 
 ```
 
