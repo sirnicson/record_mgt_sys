@@ -1,0 +1,3 @@
+# Libraries utilized in this project
+
+- pytest: For unit testing
