@@ -1,7 +1,9 @@
-class ClientRecord:
+from record.base_record import BaseRecord
+
+class ClientRecord(BaseRecord):
     def __init__(self, client_id, name, address_line1, address_line2, address_line3, city, state, zip_code, country, phone):
+        super().__init__(client_id=client_id)
         self.Type = "Client"
-        self.ID = client_id
         self.Name = name
         self.AddressLine1 = address_line1
         self.AddressLine2 = address_line2
@@ -12,9 +14,10 @@ class ClientRecord:
         self.Country = country
         self.Phone = phone
 
-def to_dict(self):
-    return {
-            "ID": self.ID,
+    def to_dict(self):
+        client_record = super().to_dict()
+        client_record.update({
+            "ID": self.client_id,
             "Type": self.Type,
             "Name": self.Name,
             "Address Line 1": self.AddressLine1,
@@ -25,4 +28,5 @@ def to_dict(self):
             "Zip Code": self.ZipCode,
             "Country": self.Country,
             "Phone Number": self.Phone
-    }
+        })
+        return client_record
